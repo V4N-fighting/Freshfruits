@@ -1,1 +1,57 @@
+:root{
+    /* primary-color */
+    --primary-color: #80b500;
+
+     /* color */
+     --white-color: #ffffff;
+     --black-color: #000000;
+
+    /* text-color */
+    --white-text-color: #ffffff;
+    --black-text-color: #000000;
+
+   
+}
+
+*{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 2.4rem;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+button.button {
+    padding: 10px 20px;
+    color: var(--black-text-color);
+    background-color: var(--white-color);
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin: 20px;
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+button.button.primary-button {
+    color: var(--white-text-color);
+    background-color: var(--primary-color);
+}
+
+button.big-button {
+    padding: 14px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 1px solid var(--primary-color);
+}
+
+button.big-button.primary-button {
+    border: 1px solid var(--white-color);
+}
 
