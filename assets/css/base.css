@@ -9,19 +9,32 @@
     /* text-color */
     --white-text-color: #ffffff;
     --black-text-color: #000000;
+    --placeholder-text-color: #555555;
 
-   
+   /* footer */
+   --padding-left-right-footer: 40px;
 }
 
+
 *{
-    box-sizing: inherit;
+    box-sizing: border-box;;
 }
 
 html{
     font-size: 62.5%;
     line-height: 2.4rem;
     font-family: 'Poppins',sans-serif;
-    box-sizing: border-box;
+    
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 button.button {
