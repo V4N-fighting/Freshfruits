@@ -67,3 +67,10 @@ button.big-button.primary-button {
     border: 1px solid var(--white-color);
 }
 
+.bg-orange{
+    background-color: rgb(255 165 0);
+}
+
+.bg-d-green{
+    background-color: rgb(16 48 1);
+}
