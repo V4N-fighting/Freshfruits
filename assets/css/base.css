@@ -11,6 +11,10 @@
     --black-text-color: #000000;
     --placeholder-text-color: #555555;
 
+    /* header */
+    --banner-height: 590px;
+    --header-height: 120px;
+
    /* footer */
    --padding-left-right-footer: 40px;
 }

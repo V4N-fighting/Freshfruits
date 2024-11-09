@@ -4,14 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freshfruits</title>
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/grid.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/js/actions.js">
     <!-- reset css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- icon -->
-    <link rel="stylesheet" href="./assets/icon/fontawesome-free-6.5.2-web/css/all.min.css">
+    
     <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;family=Rajdhani:wght@700&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -21,14 +16,19 @@
     <!-- fontawesome icon -->
     <link rel="stylesheet" href="./assets/icon/fontawesome-free-6.6.0-web/css/all.min.css">
 
-    <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <!-- js -->
+    <link rel="stylesheet" href="./assets/js/actions.js">
+
+    
 </head>
 <body>
     <!-- Header -->
     <div class="header grid">
-        <div class="header__container grid wide">
+        <div class="grid wide header__container ">
             <div class="header__logo">
                 <img class="header__logo-img" src="./assets/image/freshfruits-logo.png" alt="">
                 <div class="header__logo-text">FRESHFRUITS</div>
@@ -98,8 +98,6 @@
                     </ul>
                 </div>
             </div>
-            <script src="./assets/js/actions.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
         </div>
     </div>
 
@@ -121,13 +119,14 @@
 
         <!-- blogs -->
         <div class="blogs">
-            <div class="grid wide">
-                <div class="row">
+            <div class="grid wide ">
+                <div class="blogs-title">Lastest Blog</div>
+                <div class="row ">
                     <div class="col l-4">
                         <div class="card">
                             <a  href="" class="card__link">
                                 <div class="card__image">
-                                    <img src="https://via.placeholder.com/400x200" alt="Vegetable Garden">
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/freshmeals-reactjs.appspot.com/o/blog%2Fblog1.webp?alt=media&token=0a3173d2-d18f-46b2-a705-a4bf2e2887e6" alt="Vegetable Garden">
                                 </div>
                             </a>
                             <div class="card__content">
@@ -135,9 +134,53 @@
                                     <span class="tag">vegetable garden</span>
                                     <span class="tag">tips</span>
                                 </div>
-                                <h3 class="card__title">5 Most Important Weight Loss Fruits.</h3>
-                                <p class="card__text">Fruit is nature’s ready-made snack filled adasdassafsdfdsgfdsgdsfg</p>
-                                <a href="#" class="read__more">Read more</a>
+                                <a href="#" class="card__title">5 Most Important Weight Loss Fruits.</a>
+                                <p class="card__text">Trái cây gần như luôn luôn tươi ngọt và mọng nước, màu sắc trái cây là điểm nhân giúp hấp dẫn người dùng đến với hương vị ngọt ngào</p>
+                        
+                                <div class="card__footer">
+                                    <span class="author"><i class="fa-solid fa-user-pen"></i> by Admin</span>
+                                    <span class="date"><i class="fa-regular fa-calendar-days"></i> Nov 12, 2022</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4">
+                        <div class="card">
+                            <a  href="" class="card__link">
+                                <div class="card__image">
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/freshmeals-reactjs.appspot.com/o/blog%2Fblog1.webp?alt=media&token=0a3173d2-d18f-46b2-a705-a4bf2e2887e6" alt="Vegetable Garden">
+                                </div>
+                            </a>
+                            <div class="card__content">
+                                <div class="tags">
+                                    <span class="tag">vegetable garden</span>
+                                    <span class="tag">tips</span>
+                                </div>
+                                <a href="#" class="card__title">5 Most Important Weight Loss Fruits.</a>
+                                <p class="card__text">Trái cây gần như luôn luôn tươi ngọt và mọng nước, màu sắc trái cây là điểm nhân giúp hấp dẫn người dùng đến với hương vị ngọt ngào</p>
+                        
+                                <div class="card__footer">
+                                    <span class="author"><i class="fa-solid fa-user-pen"></i> by Admin</span>
+                                    <span class="date"><i class="fa-regular fa-calendar-days"></i> Nov 12, 2022</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4">
+                        <div class="card">
+                            <a  href="" class="card__link">
+                                <div class="card__image">
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/freshmeals-reactjs.appspot.com/o/blog%2Fblog1.webp?alt=media&token=0a3173d2-d18f-46b2-a705-a4bf2e2887e6" alt="Vegetable Garden">
+                                </div>
+                            </a>
+                            <div class="card__content">
+                                <div class="tags">
+                                    <span class="tag">vegetable garden</span>
+                                    <span class="tag">tips</span>
+                                </div>
+                                <a href="#" class="card__title">5 Most Important Weight Loss Fruits.</a>
+                                <p class="card__text">Trái cây gần như luôn luôn tươi ngọt và mọng nước, màu sắc trái cây là điểm nhân giúp hấp dẫn người dùng đến với hương vị ngọt ngào</p>
+                        
                                 <div class="card__footer">
                                     <span class="author"><i class="fa-solid fa-user-pen"></i> by Admin</span>
                                     <span class="date"><i class="fa-regular fa-calendar-days"></i> Nov 12, 2022</span>
@@ -146,6 +189,40 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- test -->
+        <div class="blogs ">
+            <div class="blogs-content">
+                <section class="splide" id="test" aria-label="Ví dụ HTML cơ bản của Splide">
+                    <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide col l-4">
+                                    <div class="card">
+                                        <a  href="" class="card__link">
+                                            <div class="card__image">
+                                                <img src="https://firebasestorage.googleapis.com/v0/b/freshmeals-reactjs.appspot.com/o/blog%2Fblog2.webp?alt=media&token=5abac526-4a0d-44e5-884f-aa078dcbed49" alt="Vegetable Garden">
+                                            </div>
+                                        </a>
+                                        <div class="card__content">
+                                            <div class="tags">
+                                                <span class="tag">vegetable garden</span>
+                                                <span class="tag">tips</span>
+                                            </div>
+                                            <a href="#" class="card__title">5 Most Important Weight Loss Fruits.</a>
+                                            <p class="card__text">Trái cây gần như luôn luôn tươi ngọt và mọng nước, màu sắc trái cây là điểm nhân giúp hấp dẫn người dùng đến với hương vị ngọt ngào</p>
+                                    
+                                            <div class="card__footer">
+                                                <span class="author"><i class="fa-solid fa-user-pen"></i> by Admin</span>
+                                                <span class="date"><i class="fa-regular fa-calendar-days"></i> Nov 12, 2022</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>  
+                            </ul>
+                    </div>
+                </section>
             </div>
         </div>
     </div>
@@ -301,5 +378,9 @@
             </div>
          </div>
     </div>
+
+
+    <script src="./assets/js/actions.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 </body>
 </html>

@@ -1,15 +1,16 @@
-/* header */
+/* -------------------------------------------    header     --------------------------------------------------*/
 .header{
     font-family: "Oswald", sans-serif;
 }
 
-.header__container{
+.header .header__container{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 120px;
+    height: var(--header-height);
     z-index: 999;
     position: relative;
+    margin-bottom: calc(var(--banner-height) - var(--header-height));
 }
 
 .header__logo{
@@ -110,15 +111,13 @@
     fill: #000;
 }
 
-/* contain */
-.contain {
-}
+
 
 /* banner */
 .banner {
     position: absolute;
     width: 100%;
-    height: 590px;
+    height: var(--banner-height);
     top: 0px;
     z-index: -1;
     overflow: hidden;
@@ -288,6 +287,10 @@ button.banner__button-left{
     line-height: 1.6;
 }
 
+/* --------------------------------------------  contain  --------------------------------------------------- */
+.contain {
+}
+
 
 /* discount */
 .discount {
@@ -311,9 +314,28 @@ button.banner__button-left{
 
 /* -------------------------------- START - blogs --------------------------------------- */
 .blogs {
-
+    padding: 120px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.blogs-content {
+    max-width: 1240px;
+    margin: 0 -12px;
+    overflow-x: hidden;
+}
+
+.blogs .splide__slide::before {
+    display: none;
+}
+
+.blogs-title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 58px;
+}
 
 .blogs .card {
     width: 100%;
@@ -322,10 +344,16 @@ button.banner__button-left{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: #fff;
     transition: transform 0.2s ease-in-out;
+    margin: 0 8px;
 }
 
 .blogs .card:hover {
     transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.blogs .card:hover .card__title{
+    color: var(--primary-color);
 }
 
 .blogs .card__link {
@@ -365,8 +393,9 @@ button.banner__button-left{
     background-color: var(--white-text-color);
     color: var(--black-text-color);
     font-size: 12px;
+    line-height: 1;
     font-weight: bold;
-    padding: 6px 8px;
+    padding: 10px 8px;
     border-radius: 16px;
     text-transform: lowercase;
     border: 1px solid var(--primary-color);
@@ -378,27 +407,28 @@ button.banner__button-left{
     font-weight: bold;
     margin: 0 0 10px 0;
     line-height: 1.5;
+    color: var(--black-text-color);
+    transition: all 0.2s linear;
+}
+
+.blogs .card__title:hover {
+    color: var(--primary-color);
 }
 
 .blogs .card__text {
     font-size: 14px;
     color: #666;
-    margin: 0 0 10px 0;
-    white-space: nowrap;      
-    overflow: hidden;         
-    text-overflow: ellipsis;  
-    width: 100%; 
+    margin: 0 0 26px 0;
     padding-right: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2; /* Hiển thị tối đa 2 dòng */
+    max-height: 4.8rem; /* Giới hạn chiều cao gần bằng 2 dòng */
 }
 
-.blogs .read__more {
-    color: var(--primary-color);
-    font-weight: bold;
-    text-decoration: underline;
-    display: inline-block;
-    margin-bottom: 26px;
-    font-size: 14px;
-}
+
 
 .blogs .card__footer {
     display: flex;
