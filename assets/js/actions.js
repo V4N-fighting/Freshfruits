@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
         type   : 'loop',
         perPage: 3,
         perMove: 1,
+        height: '3'
       } );
       
       splide.mount();

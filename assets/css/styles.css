@@ -318,17 +318,9 @@ button.banner__button-left{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
-.blogs-content {
-    max-width: 1240px;
-    margin: 0 -12px;
-    overflow-x: hidden;
-}
-
-.blogs .splide__slide::before {
-    display: none;
-}
 
 .blogs-title {
     text-align: center;
@@ -336,6 +328,18 @@ button.banner__button-left{
     font-weight: bold;
     margin-bottom: 58px;
 }
+
+.blogs-content {
+    max-width: 1240px;
+    margin: 0 -12px;
+    clip-path: inset(0px 0px 0px 0px);
+}
+
+
+.blogs .splide__slide::before {
+    display: none;
+}
+
 
 .blogs .card {
     width: 100%;
@@ -350,6 +354,7 @@ button.banner__button-left{
 .blogs .card:hover {
     transform: translateY(-5px);
     cursor: pointer;
+    z-index: 10;
 }
 
 .blogs .card:hover .card__title{

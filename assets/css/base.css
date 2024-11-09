@@ -41,6 +41,10 @@ a {
     text-decoration: none;
 }
 
+.padding-t-b-10 {
+    padding: 10px 0;
+}
+
 button.button {
     padding: 10px 20px;
     color: var(--black-text-color);
