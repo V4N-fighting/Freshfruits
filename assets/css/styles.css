@@ -304,8 +304,72 @@ button.banner__button-left{
 
 /* deal */
 .deal {
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 120px 0;
 }
+
+.deal__wrapper {
+    margin: 0 180px;
+}
+
+.deal__product, .deal__content {
+    width: 100%;
+    overflow: hidden;
+}
+
+.deal__propduct--image {
+    height: auto;
+    max-width: 100%;
+}
+
+.deal__subtitle {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.deal__title {
+    text-align: left;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 58px;
+    text-transform: capitalize;
+    line-height: 1.4;
+}
+
+.deal__countdown {
+    display: flex;
+    gap: 10px;
+    margin-top: 90px;
+}
+
+.deal__time {
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.deal__time span {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--white-text-color);
+    border-radius: 50%;
+    background-color: #80b500;
+    padding: 30px;
+}
+
+.deal__time p {
+    font-size: 20px;
+    color: var(--black-text-color);
+    margin-top: 35px;
+}
+
+
 
 /* invesment */
 .invesment {
